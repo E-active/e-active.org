@@ -3342,7 +3342,7 @@
                     <ul id="menu-main-primary" class="menu">
                       <li
                         id="menu-item-13"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13"
+                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-656 current_page_item menu-item-13"
                       >
                         <a href="./index.html"
                           >Home</a
@@ -4468,23 +4468,259 @@
                                           ></p>
                                           <ul></ul>
                                         </div>
-										<form action="send-mail.php" method="POST">
-											<select name="department" required>
-												<option value="Gynaecology">Gynaecology</option>
-												<option value="Cardiology">Cardiology</option>
-												<option value="Orthopaedics">Orthopaedics</option>
-												<option value="Medicine">Medicine</option>
-											</select>
-											<input type="text" name="form-name" placeholder="Patient Name" required>
-											<input type="text" name="phone" placeholder="Phone" required>
-											<input type="email" name="email" placeholder="Email" required>
-											<input type="date" name="date" required>
-											<input type="time" name="time" required>
-											<textarea name="message" placeholder="Type Appointment Note"></textarea>
-											<button type="submit">Make an Appointment</button>
-										</form>
-										
-									  
+										<form
+  action="https://formspree.io/f/xqaagvjz"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your file:
+    <input type="file" name="upload">
+  </label>
+  <button type="submit">Send</button>
+</form>
+                                        <!-- <form
+										action="https://formspree.io/f/xqaagvjz"
+										method="POST"	
+                                          class="wpcf7-form init"
+                                          aria-label="Contact form"
+                                          novalidate="novalidate"
+                                          data-status="init"
+                                        >
+                                          <div style="display: none">
+                                            <input
+                                              type="hidden"
+                                              name="_wpcf7"
+                                              value="711"
+                                            />
+                                            <input
+                                              type="hidden"
+                                              name="_wpcf7_version"
+                                              value="6.0"
+                                            />
+                                            <input
+                                              type="hidden"
+                                              name="_wpcf7_locale"
+                                              value="en_US"
+                                            />
+                                            <input
+                                              type="hidden"
+                                              name="_wpcf7_unit_tag"
+                                              value="wpcf7-f711-p686-o1"
+                                            />
+                                            <input
+                                              type="hidden"
+                                              name="_wpcf7_container_post"
+                                              value="686"
+                                            />
+                                            <input
+                                              type="hidden"
+                                              name="_wpcf7_posted_data_hash"
+                                              value=""
+                                            />
+                                          </div>
+                                          <div class="appointment-box-layout1">
+                                            <div class="row gutters-15">
+                                              <div class="col-12 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="department"
+                                                    ><select
+                                                      class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required select2"
+                                                      aria-required="true"
+                                                      aria-invalid="false"
+                                                      name="department"
+                                                    >
+                                                      <option
+                                                        value="Select Department"
+                                                      >
+                                                        Select Department
+                                                      </option>
+                                                      <option
+                                                        value="Gynaecology"
+                                                      >
+                                                        Gynaecology
+                                                      </option>
+                                                      <option
+                                                        value="Cardiology"
+                                                      >
+                                                        Cardiology
+                                                      </option>
+                                                      <option
+                                                        value="Orthopaedics"
+                                                      >
+                                                        Orthopaedics
+                                                      </option>
+                                                      <option value="Medicine">
+                                                        Medicine
+                                                      </option>
+                                                    </select></span
+                                                  >
+                                                </p>
+                                              </div>
+                                              <div class="col-12 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="doctor"
+                                                    ><select
+                                                      class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required select2"
+                                                      aria-required="true"
+                                                      aria-invalid="false"
+                                                      name="doctor"
+                                                    >
+                                                      <option
+                                                        value="Choose Doctor by Name"
+                                                      >
+                                                        Choose Doctor by Name
+                                                      </option>
+                                                      <option value="Dr. Mou">
+                                                        Dr. Mou
+                                                      </option>
+                                                      <option
+                                                        value="Dr. Kalvin"
+                                                      >
+                                                        Dr. Kalvin
+                                                      </option>
+                                                      <option
+                                                        value="Mark Willy"
+                                                      >
+                                                        Mark Willy
+                                                      </option>
+                                                      <option
+                                                        value="Dr. Zinia Zara"
+                                                      >
+                                                        Dr. Zinia Zara
+                                                      </option>
+                                                    </select></span
+                                                  >
+                                                </p>
+                                              </div>
+                                              <div class="col-12 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="form-name"
+                                                    ><input
+                                                      size="40"
+                                                      maxlength="400"
+                                                      class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                      aria-required="true"
+                                                      aria-invalid="false"
+                                                      placeholder="Patient Name *"
+                                                      value=""
+                                                      type="text"
+                                                      name="form-name"
+                                                  /></span>
+                                                </p>
+                                              </div>
+                                              <div class="col-md-6 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="form-name"
+                                                    ><input
+                                                      size="40"
+                                                      maxlength="400"
+                                                      class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                      aria-required="true"
+                                                      aria-invalid="false"
+                                                      placeholder="Phone *"
+                                                      value=""
+                                                      type="text"
+                                                      name="form-name"
+                                                  /></span>
+                                                </p>
+                                              </div>
+                                              <div class="col-md-6 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="email"
+                                                    ><input
+                                                      size="40"
+                                                      maxlength="400"
+                                                      class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
+                                                      aria-required="true"
+                                                      aria-invalid="false"
+                                                      placeholder="E-mail*"
+                                                      value=""
+                                                      type="email"
+                                                      name="email"
+                                                  /></span>
+                                                </p>
+                                              </div>
+                                              <div class="col-sm-6 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="date"
+                                                    ><input
+                                                      class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date form-control rt-date"
+                                                      aria-invalid="false"
+                                                      value=""
+                                                      type="date"
+                                                      name="date"
+                                                  /></span>
+                                                </p>
+                                              </div>
+                                              <div class="col-sm-6 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="time"
+                                                    ><input
+                                                      size="40"
+                                                      maxlength="400"
+                                                      class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                      aria-required="true"
+                                                      aria-invalid="false"
+                                                      placeholder="Time*"
+                                                      value=""
+                                                      type="text"
+                                                      name="time"
+                                                  /></span>
+                                                </p>
+                                              </div>
+                                              <div class="col-12 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="message"
+                                                  >
+                                                    <textarea
+                                                      cols="40"
+                                                      rows="10"
+                                                      maxlength="2000"
+                                                      class="wpcf7-form-control wpcf7-textarea textarea form-control"
+                                                      aria-invalid="false"
+                                                      placeholder="Type Appintment Note"
+                                                      name="message"
+                                                    ></textarea>
+                                                  </span>
+                                                </p>
+                                              </div>
+                                              <div class="col-12 form-group">
+                                                <p>
+                                                  <input
+                                                    class="wpcf7-form-control wpcf7-submit has-spinner item-btn"
+                                                    type="submit"
+                                                    value="Make an Appointment"
+                                                  />
+                                                </p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="wpcf7-response-output"
+                                            aria-hidden="true"
+                                          ></div>
+                                        </form> -->
                                       </div>
                                     </div>
                                   </div>
@@ -4827,8 +5063,8 @@
         <button type="button" class="close">×</button>
         <form
           class="header-search-form"
-          method="get"
-          action="https://radiustheme.com/demo/wordpress/themes/medilink/"
+          method="POST"
+          action="https://formspree.io/f/xqaagvjz" method="POST"
         >
           <input
             type="search"
@@ -5352,16 +5588,5 @@
       src="https://radiustheme.com/demo/wordpress/themes/medilink/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.9"
       id="elementor-frontend-js"
     ></script>
-	<script>
-		document.querySelector('form').addEventListener('submit', function (event) {
-    const email = document.querySelector('input[name="email"]').value;
-    if (!email.includes('@')) {
-        alert('Please enter a valid email address.');
-        event.preventDefault(); // Stop form submission
-    }
-});
-
-		</script>
-	
   </body>
 </html>
