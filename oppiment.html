@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
+	<script>
+		document.getElementById('contact-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			// Perform AJAX submission or other logic
+		});
+		</script>
     <title>Appointment Form &#8211; E-active &#8211; Home heath service</title>
     <meta name="robots" content="noindex, nofollow" />
     <style>
@@ -4468,22 +4474,11 @@
                                           ></p>
                                           <ul></ul>
                                         </div>
-										<form
-  action="https://formspree.io/f/xqaagvjz"
-  method="POST"
-  enctype="multipart/form-data"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your file:
-    <input type="file" name="upload">
-  </label>
-  <button type="submit">Send</button>
-</form>
-                                        <!-- <form
+									
+										
+										
+										
+                                    <form
 										action="https://formspree.io/f/xqaagvjz"
 										method="POST"	
                                           class="wpcf7-form init"
@@ -4491,38 +4486,7 @@
                                           novalidate="novalidate"
                                           data-status="init"
                                         >
-                                          <div style="display: none">
-                                            <input
-                                              type="hidden"
-                                              name="_wpcf7"
-                                              value="711"
-                                            />
-                                            <input
-                                              type="hidden"
-                                              name="_wpcf7_version"
-                                              value="6.0"
-                                            />
-                                            <input
-                                              type="hidden"
-                                              name="_wpcf7_locale"
-                                              value="en_US"
-                                            />
-                                            <input
-                                              type="hidden"
-                                              name="_wpcf7_unit_tag"
-                                              value="wpcf7-f711-p686-o1"
-                                            />
-                                            <input
-                                              type="hidden"
-                                              name="_wpcf7_container_post"
-                                              value="686"
-                                            />
-                                            <input
-                                              type="hidden"
-                                              name="_wpcf7_posted_data_hash"
-                                              value=""
-                                            />
-                                          </div>
+                                         
                                           <div class="appointment-box-layout1">
                                             <div class="row gutters-15">
                                               <div class="col-12 form-group">
@@ -4633,7 +4597,7 @@
                                                       placeholder="Phone *"
                                                       value=""
                                                       type="text"
-                                                      name="form-name"
+                                                      name="number"
                                                   /></span>
                                                 </p>
                                               </div>
@@ -4682,8 +4646,44 @@
                                                       aria-invalid="false"
                                                       placeholder="Time*"
                                                       value=""
-                                                      type="text"
+                                                      type="time"
                                                       name="time"
+                                                  /></span>
+                                                </p>
+                                              </div>
+											  <div class="col-sm-6 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="time"
+                                                    ><input
+                                                      size="40"
+                                                      maxlength="400"
+                                                      class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                      aria-required="true"
+                                                      aria-invalid="false"
+                                                      placeholder="Address"
+                                                      value=""
+                                                      type="address"
+                                                      name="Address"
+                                                  /></span>
+                                                </p>
+                                              </div>
+											  <div class="col-sm-6 form-group">
+                                                <p>
+                                                  <span
+                                                    class="wpcf7-form-control-wrap"
+                                                    data-name="time"
+                                                    ><input
+                                                      size="40"
+                                                      maxlength="400"
+                                                      class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                      aria-required="true"
+                                                      aria-invalid="false"
+                                                      placeholder="Gender"
+                                                      value=""
+                                                      type="gender"
+                                                      name="Gender"
                                                   /></span>
                                                 </p>
                                               </div>
@@ -5213,11 +5213,6 @@
       wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
       /* ]]> */
     </script>
-    <script
-      type="text/javascript"
-      src="https://radiustheme.com/demo/wordpress/themes/medilink/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0"
-      id="swv-js"
-    ></script>
     <script type="text/javascript" id="contact-form-7-js-before">
       /* <![CDATA[ */
       var wpcf7 = {
@@ -5228,11 +5223,11 @@
       };
       /* ]]> */
     </script>
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://radiustheme.com/demo/wordpress/themes/medilink/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0"
       id="contact-form-7-js"
-    ></script>
+    ></script> -->
     <script
       type="text/javascript"
       src="https://radiustheme.com/demo/wordpress/themes/medilink/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.4.2"
